@@ -2,6 +2,7 @@
 
 class Car
 {
+    public const string CompanyName = "WAG";
     private string name;
     private string color;
     private double price;
@@ -46,7 +47,7 @@ class Car
         Console.OutputEncoding = System.Text.Encoding.Unicode;
         Console.InputEncoding = System.Text.Encoding.Unicode;
 
-        Console.WriteLine($"Name: {this.name} Color: {this.color} Price: {this.price}");
+        Console.WriteLine($"Company name: {Car.CompanyName} Name: {this.name} Color: {this.color} Price: {this.price}");
     }
 
     //Перевірка чи збігається марка та колір
@@ -62,7 +63,7 @@ class Car
     //Виведення даних про авто за допомогою ToString
     public override string ToString()
     {
-        return $"Name: {this.name} Color: {this.color} Price: {this.price}";
+        return $"Company name: {Car.CompanyName} Name: {this.name} Color: {this.color} Price: {this.price}";
     }
 
     //Додає х% до ціни
